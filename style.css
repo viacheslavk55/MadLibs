@@ -26,3 +26,18 @@ footer {
     padding: 20px;
     text-align: center;
 }
+
+.madlib {
+    font-size: large;
+    font-weight: 900;
+}
+
+.bgg {
+    background-image: url('bg.jpg');
+    height: 100%;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

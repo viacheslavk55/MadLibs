@@ -7,4 +7,4 @@ let story = `Once upon a time, in a ${adjective} ${noun}, a ${verb} ${noun} ${ad
 
 let madLibOutputDiv = document.getElementById('madLibOutput')
 
-madLibOutputDiv.innerHTML = `<p>${story}</p>`
+madLibOutputDiv.innerHTML = `<p class='madlib'>${story}</p>`
