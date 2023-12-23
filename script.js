@@ -1,10 +1,12 @@
-let adjective = prompt('Enter an Adjective:')
-let noun = prompt('Enter a Noun:')
-let verb = prompt('Enter a Verb:')
-let adverb = prompt('Enter an Adverb:')
+function generateMadLib() {
+    let adjective = prompt('Enter an Adjective:')
+    let noun = prompt('Enter a Noun:')
+    let verb = prompt('Enter a Verb:')
+    let adverb = prompt('Enter an Adverb:')
 
-let story = `Once upon a time, in a ${adjective} ${noun}, a ${verb} ${noun} ${adverb} ${verb}.`
+    let story = `Once upon a time, in a ${adjective} ${noun}, a ${verb} ${noun} ${adverb} ${verb}.`
 
-let madLibOutputDiv = document.getElementById('madLibOutput')
+    let madLibOutputDiv = document.getElementById('madLibOutput')
 
-madLibOutputDiv.innerHTML = `<p class='madlib'>${story}</p>`
+    madLibOutputDiv.innerHTML = `<p class='madlib'>${story}</p>`
+}

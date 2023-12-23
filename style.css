@@ -1,6 +1,6 @@
 body,html{
-    height:100%;
-    }
+    height: 100%;
+}
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
@@ -24,15 +24,10 @@ footer {
     width: 100%;
 }
 
-#madLibOutput {
-    position: absolute;
-    top: 50%;
-}
-
 .madlib {
     font-size: large;
     font-weight: 900;
-    color: white;
+    color: #87ceeb;
 }
 
 .bgg {
@@ -44,3 +39,359 @@ footer {
     background-repeat: no-repeat;
     background-size: cover;
 }
+:root {
+    --red: #dc3d2a;
+    --blue: #87ceeb;
+  }
+  
+  .overflow {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    border-radius: 12px;
+  }
+  
+  button {
+    position: relative;
+    width: 190px;
+    height: 50px;
+    border: 0px solid;
+    outline: 0px solid;
+    cursor: pointer;
+    background: var(--blue);
+    border-radius: 12px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+  
+  .santa {
+    width: 45px;
+    position: absolute;
+    z-index: -1;
+    top: 0px;
+    -webkit-transition: 250ms;
+    transition: 250ms;
+  }
+  
+  .christmas-tree {
+    width: 30px;
+    position: absolute;
+    -webkit-transform: translateY(30px);
+    -ms-transform: translateY(30px);
+    transform: translateY(30px);
+    -webkit-transition: 300ms;
+    transition: 300ms;
+    -webkit-transition-delay: 500ms;
+    transition-delay: 500ms;
+  }
+  
+  .christmas-tree-1 {
+    left: 0px;
+    top: 20px;
+  }
+  
+  .christmas-tree-2 {
+    right: 0px;
+    top: 20px;
+  }
+  
+  .cloud-container {
+    position: absolute;
+    width: 100%;
+    -webkit-transform: translateY(-40px);
+    -ms-transform: translateY(-40px);
+    transform: translateY(-40px);
+    -webkit-transition: 250ms;
+    transition: 250ms;
+    -webkit-transition-delay: 250ms;
+    transition-delay: 250ms;
+  }
+  
+  .cloud {
+    fill: #fff;
+    position: absolute;
+  }
+  
+  .cloud:nth-child(1) {
+    left: 30px;
+    top: 3px;
+    -webkit-animation-name: cloud;
+    animation-name: cloud;
+    -webkit-animation-duration: 4s;
+    animation-duration: 4s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-fill-mode: backwards;
+    animation-fill-mode: backwards;
+  }
+  
+  .cloud:nth-child(2) {
+    right: 30px;
+    top: 14px;
+    -webkit-animation-name: cloud;
+    animation-name: cloud;
+    -webkit-animation-duration: 4s;
+    animation-duration: 4s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-fill-mode: backwards;
+    animation-fill-mode: backwards;
+  }
+  
+  @-webkit-keyframes cloud {
+    0% {
+      -webkit-transform: translateX(0px);
+      transform: translateX(0px);
+    }
+  
+    50% {
+      -webkit-transform: translateX(-4px);
+      transform: translateX(-4px);
+    }
+  
+    100% {
+      -webkit-transform: translateX(4px);
+      transform: translateX(4px);
+    }
+  }
+  
+  @keyframes cloud {
+    0% {
+      -webkit-transform: translateX(0px);
+      transform: translateX(0px);
+    }
+  
+    50% {
+      -webkit-transform: translateX(-4px);
+      transform: translateX(-4px);
+    }
+  
+    100% {
+      -webkit-transform: translateX(4px);
+      transform: translateX(4px);
+    }
+  }
+  
+  .snowflake {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+  }
+  
+  .snowflake:nth-child(1) {
+    -webkit-transition: 0.8s;
+    transition: 0.8s;
+    -webkit-filter: drop-shadow(0 0 10px #fffdef);
+    filter: drop-shadow(0 0 10px #fffdef);
+    width: 30px;
+    height: 30px;
+    inset: 0;
+  }
+  
+  .snowflake:nth-child(2) {
+    -webkit-transition: 0.8s;
+    transition: 0.8s;
+    -webkit-filter: drop-shadow(0 0 10px #fffdef);
+    filter: drop-shadow(0 0 10px #fffdef);
+    width: 20px;
+    height: 20px;
+    inset: 0;
+  }
+  
+  .snowflake:nth-child(3) {
+    -webkit-transition: 0.8s;
+    transition: 0.8s;
+    -webkit-filter: drop-shadow(0 0 10px #fffdef);
+    filter: drop-shadow(0 0 10px #fffdef);
+    width: 40px;
+    height: 40px;
+    inset: 0;
+  }
+  
+  .snowflake:nth-child(4) {
+    -webkit-transition: 0.8s;
+    transition: 0.8s;
+    -webkit-filter: drop-shadow(0 0 10px #fffdef);
+    filter: drop-shadow(0 0 10px #fffdef);
+    width: 10px;
+    height: 10px;
+    inset: 0;
+  }
+  
+  .snowflake:nth-child(5) {
+    -webkit-transition: 0.8s;
+    transition: 0.8s;
+    -webkit-filter: drop-shadow(0 0 10px #fffdef);
+    filter: drop-shadow(0 0 10px #fffdef);
+    width: 8px;
+    height: 8px;
+    inset: 0;
+  }
+  
+  .sun {
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    -webkit-animation-name: sun;
+    animation-name: sun;
+    -webkit-animation-duration: 5s;
+    animation-duration: 5s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+  }
+  
+  @-webkit-keyframes sun {
+    from {
+      -webkit-transform: rotate(0.5turn);
+      transform: rotate(0.5turn);
+    }
+  
+    to {
+      -webkit-transform: rotate(1turn);
+      transform: rotate(1turn);
+    }
+  }
+  
+  @keyframes sun {
+    from {
+      -webkit-transform: rotate(0.5turn);
+      transform: rotate(0.5turn);
+    }
+  
+    to {
+      -webkit-transform: rotate(1turn);
+      transform: rotate(1turn);
+    }
+  }
+  
+  .text-container {
+    color: white;
+    background: var(--red);
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: absolute;
+    z-index: 11;
+    -webkit-transition: 250ms;
+    transition: 250ms;
+    font-size: 20px;
+  }
+  
+  /* hover state css */
+  button:hover {
+    -webkit-box-shadow: 0 0 25px var(--blue);
+    box-shadow: 0 0 25px var(--blue);
+  }
+  
+  button:hover .christmas-tree {
+    -webkit-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    transform: translateY(0px);
+  }
+  
+  button:hover .cloud-container {
+    -webkit-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    transform: translateY(0px);
+  }
+  
+  button:hover .snowflake:nth-child(1) {
+    top: 95%;
+    left: 25%;
+    -webkit-animation-name: sun;
+    animation-name: sun;
+    -webkit-animation-duration: 20s;
+    animation-duration: 20s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    opacity: 1;
+  }
+  
+  button:hover .snowflake:nth-child(2) {
+    top: -35%;
+    left: 10%;
+    -webkit-animation-name: sun;
+    animation-name: sun;
+    -webkit-animation-duration: 20s;
+    animation-duration: 20s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    opacity: 1;
+  }
+  
+  button:hover .snowflake:nth-child(3) {
+    opacity: 1;
+    top: -80%;
+    left: -30%;
+    -webkit-animation-name: sun;
+    animation-name: sun;
+    -webkit-animation-duration: 20s;
+    animation-duration: 20s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+  }
+  
+  button:hover .snowflake:nth-child(4) {
+    opacity: 1;
+    top: 120%;
+    left: 80%;
+    -webkit-animation-name: sun;
+    animation-name: sun;
+    -webkit-animation-duration: 20s;
+    animation-duration: 20s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+  }
+  
+  button:hover .snowflake:nth-child(5) {
+    opacity: 1;
+    top: 25%;
+    left: 115%;
+    -webkit-animation-name: sun;
+    animation-name: sun;
+    -webkit-animation-duration: 20s;
+    animation-duration: 20s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+  }
+  
+  button:hover .santa {
+    -webkit-transform: translate(-30px, -40px);
+    -ms-transform: translate(-30px, -40px);
+    transform: translate(-30px, -40px);
+  }
+  
+  button:hover .text-container {
+    -webkit-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    transform: translateY(-100%);
+  }
+  
+  /* hover state css */
+  
