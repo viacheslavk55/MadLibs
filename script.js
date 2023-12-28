@@ -4,7 +4,7 @@ function generateMadLib() {
     let verb = prompt('Enter a Verb:')
     let adverb = prompt('Enter an Adverb:')
 
-    let story = `Once upon a time, in a ${adjective} ${noun}, a ${verb} ${noun} ${adverb} ${verb}.`
+    let story = `At the North Pole, the elves ${adverb} ${verb} around, accusing each other of hiding the ${adjective} and ${noun} gifts.`
 
     let madLibOutputDiv = document.getElementById('madLibOutput')
 
